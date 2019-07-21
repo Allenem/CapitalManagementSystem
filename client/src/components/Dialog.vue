@@ -104,5 +104,7 @@
 </script>
 
 <style scoped>
-
+.text_right{
+  text-align: right;
+}
 </style>

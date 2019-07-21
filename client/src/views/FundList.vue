@@ -153,7 +153,7 @@
           </template>
         </el-table-column>
 
-        <!-- 管理员操作部分 -->
+        <!-- 非管理员操作部分 -->
         <el-table-column 
           prop="operation"
           label="操作"
@@ -299,13 +299,30 @@
       },
       handleDelete(index,row){
         // delete
-        this.$axios.delete(`/api/profiles/delete/${row._id}`)
-        .then(res=>{
-          this.$message({
-            message:`"${row.describe}"删除成功!`,
-            type:'warning'
+        this.$confirm('此操作将永久删除该条数据, 是否继续?', '提示', {
+          confirmButtonText: '确定',
+          cancelButtonText: '取消',
+          type: 'warning'
+        }).then(() => {
+          this.$axios.delete(`/api/profiles/delete/${row._id}`)
+          .then(res=>{
+            this.$message({
+              message:`"${row.describe}"删除成功!`,
+              type:'success'
+            });
+            this.getProfile();
+          })
+          .catch(err=>{
+            this.$message({
+              message:`"${row.describe}"删除失败!`,
+              type:'warning'
+            });
           });
-          this.getProfile();
+        }).catch(() => {
+          this.$message({
+            type: 'info',
+            message: '已取消删除'
+          });          
         });
       },
       handleAdd(){
