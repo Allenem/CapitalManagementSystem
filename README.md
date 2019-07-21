@@ -80,20 +80,7 @@ npm run dev
 │      passport.js
 │
 ├─effectImg
-│      changelist.png
-│      employeefundlist.png
-│      employeefundlistsearch.png
-│      employeeuserlist.png
-│      home.png
-│      login.png
-│      managerfundlist10items.png
-│      managerfundlist5items.png
-│      managerfundlistedit.png
-│      managerinfoshow.png
-│      manageruserlist.png
-│      manageruserlistsearch.png
-│      notmanagerinfoshow.png
-│      register.png
+│      ……
 │
 ├─models
 │      Profile.js
