@@ -16,6 +16,8 @@ cd ../
 npm run dev
 ```
 
+服务端地址：http://localhost:5000, 客户端地址：http://localhost:8080
+
 ## 二、文件结构说明
 
 ### 1.结构树
@@ -181,7 +183,7 @@ vuex存储
 - [x] 登录页面
 - [x] 主页页面
 - [x] 资金流水页面
-- [ ] 修改流水页面
+- [ ] 修改记录页面
 - [x] 个人信息页面
 - [x] 全员信息页面
 - [x] 404页面
@@ -196,7 +198,7 @@ vuex存储
 主页，非管理员资金流水页
 ![home](effectImg/home.png)![employeefundlist](effectImg/employeefundlist.png)
 
-非管理员资金流水页筛选，非管理员修改流水
+非管理员资金流水页筛选，非管理员修改记录
 ![employeefundlistsearch](effectImg/employeefundlistsearch.png)![changelist](effectImg/changelist.png)
 
 非管理员个人信息页，非管理员全员信息页
@@ -551,9 +553,11 @@ https://cloud.mongodb.com 注册申请数据库
 
 `npm i element-ui -S`安装element-ui组件
 
-用到其 Message 消息提示, Loading 加载, NavMenu 导航菜单, Table 表格, Form 表单, Pagination 分页, DateTimePicker 日期时间选择器
+用到其 Message 消息提示, Loading 加载, NavMenu 导航菜单, Table 表格, Form 表单, Pagination 分页, DateTimePicker 日期时间选择器, Icon 图标
 
 引入font-awesome图库
 ```html
 <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+
+<i class="fa fa-margin fa-server fa-2x"></i>
 ```

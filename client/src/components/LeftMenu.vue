@@ -21,6 +21,7 @@
             </template>
             <router-link v-for="(citem,cindex) in item.children" :to="citem.path" :key="cindex">
               <el-menu-item :index="citem.path">
+                <i :class="'fa fa-margin '+citem.icon"></i>
                 <span slot="title">{{ citem.name }}</span>
               </el-menu-item>
             </router-link>
@@ -43,8 +44,8 @@
             name: '资金管理',
             path: 'fund',
             children: [
-              {path:'fundlist',name:'资金流水'},
-              {path:'changelist',name:'修改流水'}
+              {path:'fundlist',icon: 'fa-credit-card-alt',name:'资金流水'},
+              {path:'changelist',icon: 'fa-credit-card',name:'修改记录'}
             ]
           },
           {
@@ -52,8 +53,8 @@
             name: '信息管理',
             path: 'info',
             children: [
-              {path:'infoshow',name:'个人信息'},
-              {path:'userlist',name:'全员信息'}
+              {path:'infoshow',icon: 'fa-user',name:'个人信息'},
+              {path:'userlist',icon: 'fa-user-plus',name:'全员信息'}
             ]
           }
         ]

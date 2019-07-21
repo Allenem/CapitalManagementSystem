@@ -9,11 +9,11 @@
       <el-col :span='16'>
         <div class="userinfo">
           <div class="user-item">
-            <i class="fa fa-user">用户：</i>
+            <i class="el-icon-user">用户：</i>
             <span>{{ user.name }}</span>
           </div>
           <div class="user-item">
-            <i class="fa fa-cog">身份：</i>
+            <i class="el-icon-setting">身份：</i>
             <span v-if="this.user.identity == 'manager'">管理员</span>
             <span v-else-if="this.user.identity == 'employee'">普通员工</span>
             <span v-else>无身份</span>
