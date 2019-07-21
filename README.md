@@ -489,32 +489,32 @@ vuex存储
 
 ### 1.后端接口配置（nodejs, express)
 
-`npm install nodemon -g`全局安装nodemon避免重复启动服务器
+`npm install nodemon -g` 全局安装nodemon避免重复启动服务器
 
-`npm i mongoose`安装mangooose
+`npm i mongoose` 安装mangooose
 
-https://cloud.mongodb.com 注册申请数据库
+[MongoDB Atlas](https://cloud.mongodb.com) 官网免费注册申请 MongoDB Atlas 云数据库
 
-*postman* 接口测试
+[postman](https://www.getpostman.com/downloads/) 下载安装软件进行接口测试
 
-`npm i body-parser`安装body-parser发post请求
+`npm i body-parser` 安装body-parser发post请求
 
-`npm i bcrypt`加密
+`npm i bcrypt` 加密
 
-`npm i gravatar`头像，可到https://en.gravatar.com/注册上传头像
+`npm i gravatar` 头像，可到https://en.gravatar.com/注册上传头像
 
-`npm i jsonwebtoken`登录成功返回token，token可以理解为一个令牌或者一个钥匙
+`npm i jsonwebtoken` 登录成功返回token，token可以理解为一个令牌或者一个钥匙
 
-`npm install passport-jwt passport`验证token
+`npm install passport-jwt passport` 验证token
 
 
 ### 2.前端页面书写（vue-cli 3.9.3, element-ui)
 
-`npm install -g @vue/cli-service-global`安装最新的vue-cli
+`npm install -g @vue/cli-service-global` 全局安装最新的vue-cli
 
-总文件目录下运行`npm i concurrently`前后端连载，不用分步开启服务，配置如下：
+总文件目录下运行 `npm i concurrently` 前后端连载，不用分步开启服务，配置如下：
 
-配置前端package.json的scripts
+配置前端 `client/package.json` 的 `"scripts"`
 ```json
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -522,7 +522,7 @@ https://cloud.mongodb.com 注册申请数据库
     "start": "npm run serve"
   },
 ```
-配置总文件packag.json的scripts
+配置总文件 `package.json` 的 `"scripts"`
 ```json
   "scripts": {
     "client-install": "npm install --prefix client",
@@ -532,19 +532,31 @@ https://cloud.mongodb.com 注册申请数据库
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
 ```
-总文件目录下运行`npm run dev`实现前后端服务同时开启
+总文件目录下运行 `npm run dev` 实现前后端服务同时开启
 
-`npm i jwt-decode -S`解析token模块
+`npm i jwt-decode -S` 解析token模块
 
-`npm i axios -S`请求工具axios
+`npm i axios -S` 请求工具axios
 
-`npm i element-ui -S`安装element-ui组件
+`npm i element-ui -S` 安装element-ui组件
 
-用到其 Message 消息提示, Loading 加载, NavMenu 导航菜单, Table 表格, Form 表单, Pagination 分页, DateTimePicker 日期时间选择器, Icon 图标
+用到其 
+* Message 消息提示
+* Loading 加载
+* NavMenu 导航菜单
+* Table 表格
+* Form 表单
+* Pagination 分页
+* DateTimePicker 日期时间选择器
+* Icon 图标
+* MessageBox 弹框 
 
-引入font-awesome图库
+等等
+
+引入 `font-awesome` 图库
 ```html
 <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
 
+<!-- 示例 -->
 <i class="fa fa-margin fa-server fa-2x"></i>
 ```
