@@ -179,26 +179,34 @@ vuex存储
 
 **test无身份，all为管理员**
 
-注册页，登录页
-![register](effectImg/register.png)![login](effectImg/login.png)
+|![register](effectImg/register.png)|![login](effectImg/login.png)|
+|:-:|:-:|
+|注册页|登录页|
 
-主页，非管理员资金流水页
-![home](effectImg/home.png)![employeefundlist](effectImg/employeefundlist.png)
+|![home](effectImg/home.png)|![employeefundlist](effectImg/employeefundlist.png)|
+|:-:|:-:|
+|主页|非管理员资金流水页|
 
-非管理员资金流水页筛选，非管理员修改记录
-![employeefundlistsearch](effectImg/employeefundlistsearch.png)![changelist](effectImg/changelist.png)
+|![employeefundlistsearch](effectImg/employeefundlistsearch.png)|![changelist](effectImg/changelist.png)|
+|:-:|:-:|
+|非管理员资金流水页筛选|非管理员修改记录|
 
-非管理员个人信息页，非管理员全员信息页
-![notmanagerinfoshow](effectImg/notmanagerinfoshow.png)![employeeuserlist](effectImg/employeeuserlist.png)
+|![notmanagerinfoshow](effectImg/notmanagerinfoshow.png)|![employeeuserlist](effectImg/employeeuserlist.png)|
+|:-:|:-:|
+|非管理员个人信息页|非管理员全员信息页|
 
-管理员资金流水页(5/page,10/page)
-![managerfundlist5items](effectImg/managerfundlist5items.png)![managerfundlist10items](effectImg/managerfundlist10items.png)
+|![managerfundlist5items](effectImg/managerfundlist5items.png)|![managerfundlist10items](effectImg/managerfundlist10items.png)|
+|:-:|:-:|
+|管理员资金流水页 5items/page|管理员资金流水页 10items/page|
 
-管理员资金流水页编辑，管理员个人信息页
-![managerfundlistedit](effectImg/managerfundlistedit.png)![managerinfoshow](effectImg/managerinfoshow.png)
+|![managerfundlistedit](effectImg/managerfundlistedit.png)|![managerinfoshow](effectImg/managerinfoshow.png)|
+|:-:|:-:|
+|管理员资金流水页编辑|管理员个人信息页|
 
-管理员全员信息页，管理员全员信息筛选
-![manageruserlist](effectImg/manageruserlist.png)![manageruserlistsearch](effectImg/manageruserlistsearch.png)
+|![manageruserlist](effectImg/manageruserlist.png)|![manageruserlistsearch](effectImg/manageruserlistsearch.png)|
+|:-:|:-:|
+|管理员全员信息页|管理员全员信息筛选|
+
 ## 五、接口说明
 
 ### 用户部分
