@@ -1,5 +1,21 @@
 # 资金管理系统（带权限）
 
+## 目录：
+
+[快速开始](#一、快速开始)
+
+[文件结构说明](#二、文件结构说明)
+
+[功能说明](#三、功能说明)
+
+[效果展示](#四、效果展示)
+
+[接口说明](#五、接口说明)
+
+[(附1)打码过程记录](#（附1）打码过程记录)
+
+[(附2)视频学习地址](#（附2）学习地址)
+
 ## 一、快速开始
 
 ```bash
@@ -493,7 +509,7 @@ vuex存储
 //已删除的信息
 ```
 
-## （附）打码过程记录
+## （附1）打码过程记录
 
 ### 1.后端接口配置（nodejs, express)
 
@@ -568,3 +584,16 @@ vuex存储
 <!-- 示例 -->
 <i class="fa fa-margin fa-server fa-2x"></i>
 ```
+
+## （附2）学习地址
+滕学课堂：https://ke.qq.com/course/391846
+
+网易课堂：https://study.163.com/course/introduction/1209227821.htm
+
+B站地址：
+
+https://www.bilibili.com/video/av59056478，
+https://www.bilibili.com/video/av55896464，
+https://www.bilibili.com/video/av53141006，
+https://www.bilibili.com/video/av54125678，
+https://www.bilibili.com/video/av44940777
