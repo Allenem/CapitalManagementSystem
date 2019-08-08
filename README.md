@@ -586,7 +586,7 @@ vuex存储
 ```
 
 ## （附2）学习地址
-滕学课堂：https://ke.qq.com/course/391846
+腾讯课堂：https://ke.qq.com/course/391846
 
 网易课堂：https://study.163.com/course/introduction/1209227821.htm
 
