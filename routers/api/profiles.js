@@ -6,6 +6,29 @@ const passport = require("passport");
 
 const Profile = require("../../models/Profile");
 
+// Date format
+Date.prototype.format = function(fmt){
+  var o = {
+    "M+" : this.getMonth()+1,                                                             //月份
+    "d+" : (this.getHours()+8>24)?(this.getDate()+1):(this.getDate()),                    //日
+    "h+" : (this.getHours()+8>24)?(this.getHours()+8-24):this.getHours()+8,               //小时
+    "m+" : this.getMinutes(),                                                             //分
+    "s+" : this.getSeconds(),                                                             //秒
+    "q+" : Math.floor((this.getMonth()+3)/3),                                             //季度
+    "S"  : this.getMilliseconds()                                                         //毫秒
+  };
+  if(/(y+)/.test(fmt)){
+    fmt=fmt.replace(RegExp.$1, (this.getFullYear()+"").substr(4 - RegExp.$1.length));
+  }  
+  for(var k in o){
+    if(new RegExp("("+ k +")").test(fmt)){
+      fmt = fmt.replace(
+        RegExp.$1, (RegExp.$1.length==1) ? (o[k]) : (("00"+ o[k]).substr((""+ o[k]).length)));  
+    }
+  }
+  return fmt;
+}
+
 // $route   GET api/profiles/test
 // @desc    返回请求的json数据
 // @access  public
@@ -30,6 +53,7 @@ router.post(
     if(req.body.expend) profileField.expend = req.body.expend;
     if(req.body.cash) profileField.cash = req.body.cash;
     if(req.body.remark) profileField.remark = req.body.remark;
+    if(new Date().format("yyyy-MM-dd hh:mm:ss")) profileField.date = new Date().format("yyyy-MM-dd hh:mm:ss");
     
     new Profile(profileField).save().then( profile =>{
       res.json(profile);
@@ -83,6 +107,7 @@ router.post(
     if(req.body.expend) profileField.expend = req.body.expend;
     if(req.body.cash) profileField.cash = req.body.cash;
     if(req.body.remark) profileField.remark = req.body.remark;
+    if(new Date().format("yyyy-MM-dd hh:mm:ss")) profileField.date = new Date().format("yyyy-MM-dd hh:mm:ss");;
     
     Profile.findOneAndUpdate(
       {_id: req.params.id},

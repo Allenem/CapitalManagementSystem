@@ -7,7 +7,7 @@
           :model="registerUser"
           :rules="rules"
           ref="registerForm"
-          label-width="80px"
+          label-width="90px"
           class="registerForm"
         >
           <el-form-item label="用户名" prop="name">
