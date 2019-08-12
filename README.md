@@ -23,11 +23,7 @@ git clone https://github.com/Allenem/CapitalManagementSystem.git
 
 npm install
 
-cd client
-
-npm install
-
-cd ../
+npm run client-install
 
 npm run dev
 ```
