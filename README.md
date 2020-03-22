@@ -586,10 +586,10 @@ vuex存储
 
 网易课堂：https://study.163.com/course/introduction/1209227821.htm
 
-B站地址：
+B站地址（貌似只剩下最后一个有效了:see_no_evil:）：
 
-https://www.bilibili.com/video/av59056478，
-https://www.bilibili.com/video/av55896464，
-https://www.bilibili.com/video/av53141006，
-https://www.bilibili.com/video/av54125678，
+https://www.bilibili.com/video/av59056478   
+https://www.bilibili.com/video/av55896464   
+https://www.bilibili.com/video/av53141006   
+https://www.bilibili.com/video/av54125678   
 https://www.bilibili.com/video/av44940777
